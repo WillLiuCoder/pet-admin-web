@@ -22,6 +22,7 @@
         style="width: 100%"
       >
         <el-table-column prop="serviceId" label="ID" width="80" />
+        <el-table-column prop="kind" label="宠物类别" width="150" />
         <el-table-column prop="name" label="服务名称" width="150" />
         <el-table-column prop="description" label="服务描述" min-width="200" />
         <el-table-column prop="basePrice" label="基础价格" width="120">
@@ -180,6 +181,7 @@ const fetchServiceTypeList = async () => {
     tableData.value = [
       {
         serviceId: 1,
+        kind: '猫类',
         name: '宠物喂养服务',
         description: '为宠物提供定时喂养服务，包括食物准备、投喂、清理等',
         basePrice: 30.00,
@@ -189,6 +191,7 @@ const fetchServiceTypeList = async () => {
       },
       {
         serviceId: 2,
+        kind: '犬类',
         name: '遛狗服务',
         description: '为狗狗提供户外遛弯服务，包括运动、排泄、社交等',
         basePrice: 50.00,

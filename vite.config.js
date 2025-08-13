@@ -16,10 +16,14 @@ export default defineConfig({
       //   target: 'http://localhost:8080',
       //   changeOrigin: true
       // },
+      '/pet-admin': {
+        target: 'http://localhost:8080',
+        changeOrigin: true
+      },
       '/pet-auth': {
         target: 'http://localhost:8081',
         changeOrigin: true
-      }
+      },
     }
   }
 })
